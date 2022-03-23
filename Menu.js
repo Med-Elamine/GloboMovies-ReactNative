@@ -10,6 +10,9 @@ const Menu = () => {
             <TouchableOpacity onPress={() => navigation.navigate('Movies')} style = {styles.button}>
                 <Text style = {styles.buttonText}>MOVIES</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Contact')} style = {styles.button}>
+                <Text style = {styles.buttonText}>CONTACT US</Text>
+            </TouchableOpacity>
         </View>
     );
 }
