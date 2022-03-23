@@ -6,6 +6,7 @@ import Home from './Home';
 import Movies from './Movies';
 import MoviePurchase from './MoviePurchase';
 import Contact from './Contact';
+import News from './News';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ export default function App() {
           <Stack.Screen name='Movies' component={ Movies } options={{headerTitleAlign: 'center'}} />
           <Stack.Screen name='Purchase' component={ MoviePurchase } options={{headerTitle: 'Movies Purchase', headerTitleAlign: 'center'}} />
           <Stack.Screen name='Contact' component={ Contact } options={{headerTitle: 'Contact Us', headerTitleAlign: 'center'}} />
+          <Stack.Screen name='News' component={ News } options={{headerTitle: 'Latest News', headerTitleAlign: 'center'}} />
         </Stack.Navigator>
       </NavigationContainer>
   );
