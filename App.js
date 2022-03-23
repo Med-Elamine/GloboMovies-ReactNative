@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from './Home';
 import Movies from './Movies';
+import MoviePurchase from './MoviePurchase';
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ export default function App() {
             {(props) => <Home {...props} appName = 'GloboMovies'/> }
           </Stack.Screen>
           <Stack.Screen name='Movies' component={ Movies } options={{headerTitleAlign: 'center'}} />
+          <Stack.Screen name='Purchase' component={ MoviePurchase } options={{headerTitle: 'Movies Purchase', headerTitleAlign: 'center'}} />
         </Stack.Navigator>
       </NavigationContainer>
   );

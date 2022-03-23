@@ -22,7 +22,9 @@ const Movies = ({navigation}) => {
                     <Text style = {styles.price} >
                         {item.price}$
                     </Text>
+                    <TouchableOpacity onPress={() => {(navigation.navigate('Purchase', {movieId: item.movieId}))}}>
                         <Text style = {styles.movieButton}>GET MOVIE 🎬</Text>
+                    </TouchableOpacity> 
                 </View>
             </View>
         ); 
