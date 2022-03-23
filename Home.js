@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
+import Menu from "./Menu";
 
 const Home = (props) => {
     return(
@@ -24,6 +25,9 @@ const Home = (props) => {
                 <Text style={styles.content}>
                     {secondText}
                 </Text>
+            </View>
+            <View style={styles.menu}>
+                <Menu />
             </View>
         </View>
     );
@@ -72,6 +76,10 @@ const styles = StyleSheet.create({
         fontWeight: '200',
         fontSize: 12,
         color: 'black'
+    },
+    menu: {
+        position: 'absolute',
+        top: 50
     }
 });
 
